@@ -16,6 +16,7 @@ Filter 는 Spring Context 밖에서 즉, Servlet Dispatcher 에 도달하기 전
 
 반면에 Interceptor 는 Spring Context 내부에 존재하기 때문에 Spring IoC 컨테이너에 포함되어 있는 Bean 에 접근할 수 있다는 차이점이 있습니다. 이에 따라서 Filter 는 예외가 발생했을 때 직접 예외에 대한 처리를 해줘야 하지만 Interceptor 는 ControllerAdvice 를 이용한 Exception Handler 를 이용해 예외를 처리할 수 있다는 장점이 있습니다.
 
+<br>
 
 ## Interceptor 와 Filter 를 각각 언제 사용할 수 있나요?
 
@@ -23,6 +24,7 @@ Filter 는 Spring Context 밖에서 즉, Servlet Dispatcher 에 도달하기 전
 
 Interceptor 는 Spring Context 에 등록되어 동작하기 때문에 Spring IoC 컨테이너에 포함된 Bean 을 이용해야하는 Spring 관련 작업을 전역적으로 처리하기 위해 사용할 수 있을 것 같습니다. 예를 들면 Spring Security 를 이용한 사용자 인증, 인가작업이 있을 것 같습니다.
 
+<br>
 
 ## Interceptor 와 Filter 에 대해서 이야기를 했는데, 이게 Spring AOP 와 비슷한 역할을 수행하는 것 같은데 혹시 어떤 차이점이 있나요?
 
@@ -30,6 +32,7 @@ AOP 와의 첫 번째 차이점은 Interceptor 와 Filter 는 클라이언트의
 
 그리고 Interceptor 와 Filter 는 HTTP Request 단위로만 지정이 가능하지만 AOP 는 메소드 단위로도 지정이 가능하다는 차이점이 있습니다.
 
+<br>
 
 ## Filter 와 Interceptor 그리고 AOP 가 적용되는 순서에 대해서 이야기해주실 수 있나요?
 
