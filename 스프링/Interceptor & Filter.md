@@ -4,7 +4,7 @@
 
 Interceptor 와 Filter 의 공통점으로는 클라이언트가 특정 URI 로 HTTP 요청을 보내고 HTTP 응답을 받는 과정을 가로채 추가적인 작업을 수행한다는 것입니다.
 
-
+<br>
 
 ## 그러면 Interceptor 와 Filter 의 차이점에는 어떠한 것들이 있을까요?
 
