@@ -1,5 +1,3 @@
-# Interceptor & Filter
-
 ## Interceptor 와 Filter 의 공통점에 대해서 설명해주세요.
 
 Interceptor 와 Filter 의 공통점으로는 클라이언트가 특정 URI 로 HTTP 요청을 보내고 HTTP 응답을 받는 과정을 가로채 추가적인 작업을 수행한다는 것입니다.
